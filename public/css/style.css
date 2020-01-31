@@ -26,8 +26,8 @@ a {
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
-	filter: grayscale(50%);
 }
+
 /* Slut på wrappern */
 
 /* Hero-section */ 
@@ -41,7 +41,11 @@ a {
 
 .hero-big-header {
 	font-family: 'Lobster', sans-serif;
-	font-size: 5rem;
+	font-size: 10rem;
+	background: -webkit-linear-gradient(#ffe838, #fd57bf);
+	-webkit-background-clip: text;
+	background-clip: text;
+	  -webkit-text-fill-color: transparent;
 }
 
 .button {
@@ -51,3 +55,29 @@ a {
 	font-family: 'Roboto', sans-serif;
 }
 /* Slut på hero-section */ 
+
+/* Product-section */
+.product-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.product-item {
+	max-height: 500px;
+	max-width: 500px;
+	border: 1px solid black;
+}
+
+.product-name {
+	font-size: 2rem;
+	color: black;
+}
+
+.product-price {
+	font-size: 1.5rem;
+	color: red;
+}
+
+.product-img {
+	display: none;
+}

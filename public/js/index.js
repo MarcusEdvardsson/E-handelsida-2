@@ -13,8 +13,6 @@ const appendNode = (parent, elem) => {
     parent.appendChild(elem);
 };
 
-
-
 const getProducts = async () => {
     let ul = document.getElementById('products'); 
     let url = 'http://localhost:8000/products'

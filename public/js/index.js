@@ -14,18 +14,18 @@ const appendNode = (parent, elem) => {
 };
 
 const getProducts = async () => {
-    let ul = document.getElementById('products'); 
+    let ul = document.getElementById('products-section'); 
     let url = 'http://localhost:8000/products'
     let response = await fetch(url, {method: 'GET'})
     .then(response => response.json())
     .then(data => {
         data.forEach((products) => {
-            let li = document.createElement('li'),
+            let card = document.createElement('div'),
                 img = document.createElement('img'),
                 p = document.createElement('p'),
                 span = document.createElement('span');
                 addbutton = document.createElement('button');
-                li.classList.add('product-item');
+                card.classList.add('product-item');
                 img.classList.add('product-img');
                 p.classList.add('product-name');
                 span.classList.add('product-price')
@@ -34,11 +34,11 @@ const getProducts = async () => {
             span.innerText = products.price;
             p.innerText = products.name;
             addbutton.innerHTML = "Lägg i varukorg"
-            appendNode(li, img);
-            appendNode(li, p);
-            appendNode(li, span);
-            appendNode(li, addbutton);
-            appendNode(ul, li);
+            appendNode(card, img);
+            appendNode(card, p);
+            appendNode(card, span);
+            appendNode(card, addbutton);
+            appendNode(ul, card);
         });
     }).catch(err => {
         console.error('Error: ', err);

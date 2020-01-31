@@ -13,9 +13,10 @@ const appendNode = (parent, elem) => {
     parent.appendChild(elem);
 };
 
-let ul = document.getElementById('products'); 
+
 
 const getProducts = async () => {
+    let ul = document.getElementById('products'); 
     let url = 'http://localhost:8000/products'
     let response = await fetch(url, {method: 'GET'})
     .then(response => response.json())
@@ -49,3 +50,11 @@ const getProducts = async () => {
 // Add to cart
 
 // Remove from cart
+
+// CLearar form
+
+let clearForm = () => {
+    while (ul.firstChild) {
+        ul.removeChild(ul.firstChild);
+    }
+};

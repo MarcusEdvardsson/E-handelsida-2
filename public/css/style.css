@@ -1,0 +1,53 @@
+/* Globala inställningar */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	color: #eee;
+}
+
+a {
+	text-decoration: none;
+	color: #eee;
+}
+/* Slut på globala inställningar */
+
+/* Wrapper */
+.wrapper {
+	height: 100vh;
+	width: 100%;
+	background-image: url("https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	filter: grayscale(50%);
+}
+/* Slut på wrappern */
+
+/* Hero-section */ 
+.hero-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.hero-big-header {
+	font-family: 'Lobster', sans-serif;
+	font-size: 5rem;
+}
+
+.button {
+	background: none;
+	padding: 1rem 2rem;
+	border: 1px solid black;
+	font-family: 'Roboto', sans-serif;
+}
+/* Slut på hero-section */ 

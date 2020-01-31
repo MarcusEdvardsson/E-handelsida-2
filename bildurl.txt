@@ -1,0 +1,54 @@
+1name: Daomachen Damascus Pattern Slicing Chef Knife
+price: 498kr
+image url:
+https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image859/daomachen_damascus_pattern_slicing_chef_knife-48260856-66434517-org.png
+
+2name: Daomachen Damascus Chef Knife
+price: 399kr
+image url: 
+https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image767/daomachen_damascus_chef_knife-48260858-66434519-org.jpg
+
+3name: Daomachen Damascus Pattern Japanese Chef Knife
+price: 449kr
+image url:
+https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image391/daomachen_damascus_pattern_japanese_chef_knife-48260857-66434518-org.jpg
+
+4name: Victorinox Santoku med luftsläpp 17 cm
+price: 549kr
+image url:
+https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image886/victorinox_santoku_med_luftslpp_17_cm_6852017-35856753-9937396-org.jpg
+
+5name: Kuro Chopper 18 cm Handsmidd
+price: 1019kr
+image url:
+https://cdn.cdon.com/media-dynamic/images/product/householdappliancesdocument/hushallsapparater/image5/kuro_chopper_18_cm_handsmidd-44820734-1.jpg
+
+6name: Tojiro Flash Kockkniv 27 cm
+price: 4629kr
+image url:
+https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image885/tojiro_flash_kockkniv_27_cm_ffch270-35431045-9426765-org.=85
+
+7name: Tojiro Flash Santoku med luftsläpp 18 cm
+price: 3199kr
+image url:
+https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image256/tojiro_flash_santoku_med_luftslpp_18_cm_ffsa181-35431047-9426767-org.=92
+
+8name: Magoroku Grönsakskniv
+price: 2490kr
+image url:
+https://cdn.cdon.com/media-dynamic/images/product/householdappliances/hushllsapparater/image740/magoroku_grnsakskniv_165_cm-44777761-51425243-org.png
+
+9 name: Tojiro Flash Urbeningskniv
+price: 2319kr
+image url:
+https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image903/tojiro_flash_urbeningskniv_15_cm_ffbo150-35431032-9426752-org.=80
+
+10 name: Brödkniv 20 cm Olivträhandtag
+price: 2099kr
+image url:
+https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image421/--47907621-64226993-org.png
+
+name: Kockkniv 20cm Olivträhantag
+price: 2049kr
+image url:
+https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image148/--47907619-64226991-org.png

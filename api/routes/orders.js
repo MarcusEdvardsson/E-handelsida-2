@@ -26,12 +26,12 @@ router.post('/', (req, res, next) => {
             .push(object)
             .write();
             res.send(object)
-        }else {
+        } else {
             res.status(200).json({
-                message:"Produkten finns redan i varukorgen"
+                message:"Produkten togs bort från varukorgen"
             });
-                console.warn('Produkten finns redan i varukorgen')};
-        }else {
+        }
+    } else {
         res.status(200).json({
             message:"Produkten finns inte i produktkatlogen"
         });

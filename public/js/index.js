@@ -22,13 +22,15 @@ const getProducts = async () => {
         data.forEach((products) => {
             card = document.createElement('div'),
             imgDiv = document.createElement('div'),
+            txtDiv = document.createElement('div'),
             img = document.createElement('img'),
             p = document.createElement('p'),
             span = document.createElement('span'),
             addbutton = document.createElement('button');
 
             card.classList.add('product-item');
-            imgDiv.classList.add('product-img-div')
+            imgDiv.classList.add('product-img-div');
+            txtDiv.classList.add('details');
             img.classList.add('product-img');
             p.classList.add('product-name');
             span.classList.add('product-price');
@@ -45,9 +47,10 @@ const getProducts = async () => {
             });
 
             appendNode(card, imgDiv);
-            appendNode(card, p);
-            appendNode(card, span);
-            appendNode(card, addbutton);
+            appendNode(card, txtDiv);
+            appendNode(txtDiv, p);
+            appendNode(txtDiv, span);
+            appendNode(txtDiv, addbutton);
             appendNode(ul, card);
             appendNode(imgDiv, img);
         });

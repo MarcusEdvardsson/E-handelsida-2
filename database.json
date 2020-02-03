@@ -61,12 +61,5 @@
       "img": "https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image421/--47907621-64226993-org.png"
     }
   ],
-  "shoppingCart": [
-    {
-      "id": 1,
-      "name": "Daomachen Damascus Pattern Slicing Chef Knife",
-      "price": 498,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image859/daomachen_damascus_pattern_slicing_chef_knife-48260856-66434517-org.png"
-    }
-  ]
+  "shoppingCart": []
 }

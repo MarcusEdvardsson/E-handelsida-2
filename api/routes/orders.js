@@ -22,18 +22,16 @@ router.post('/', (req, res, next) => {
     if(object) {
         let checkifExists = database.get("shoppingCart").find({id: id}).value()
         if(!checkifExists) {
-            
         database.get("shoppingCart")
-        .push(object)
-        .write();
-    
-        res.send(object)
-        } else {
+            .push(object)
+            .write();
+            res.send(object)
+        }else {
             res.status(200).json({
                 message:"Produkten finns redan i varukorgen"
             });
-        }
-    } else {
+                console.warn('Produkten finns redan i varukorgen')};
+        }else {
         res.status(200).json({
             message:"Produkten finns inte i produktkatlogen"
         });

@@ -71,3 +71,12 @@ const addtoCart = async (id) => {
     return data;
 };
 
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 27) {
+        let top = document.getElementById('mainListDiv')
+        top.scrollIntoView({
+            behavior: "smooth", 
+            block: "start"
+        });
+    };
+});

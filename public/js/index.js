@@ -8,18 +8,6 @@ button.addEventListener("click", function(event) {
         });
 });
 
-
-
-// Add to cart
-const addtoCart = async (id) => {
-    let url = 'http://localhost:8000/orders'
-    let response = await fetch(url, {method: 'POST'})
-    .then(response => response.json())
-    .then(data => {
-         return data
-    });
-};
-
 // Hämta produkter
 const appendNode = (parent, elem) => {
     parent.appendChild(elem);
@@ -66,6 +54,16 @@ const getProducts = async () => {
 };
 
 getProducts();
+
+// Add to cart
+const addtoCart = async (id) => {
+    let obj = {id: id}
+    let url = 'http://localhost:8000/orders'
+    let response = await fetch(url, {method: 'POST', headers: {'Content-Type': 'application/json;charset=utf-8'}, body: JSON.stringify(obj)})
+    let data = await response.json()
+    console.log(obj)
+    return data;
+};
 
 
 // Remove from cart

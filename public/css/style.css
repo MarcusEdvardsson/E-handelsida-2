@@ -37,6 +37,18 @@ a {
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+	overflow: hidden;
+}
+
+@keyframes slideInFromLeft {
+	0% {
+	  transform: translateX(-30%);
+	  opacity: 0%;
+	}
+	100% {
+	  transform: translateX(0);
+	  opacity: 100%;
+	}
 }
 
 .hero-big-header {
@@ -46,6 +58,7 @@ a {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .hero-small-header {

@@ -20,9 +20,9 @@
     },
     {
       "id": 4,
-      "name": "Victorinox Santoku med luftsläpp 17 cm",
+      "name": "Daomachen Damascus Pattern Kitchen Knife",
       "price": 549,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image886/victorinox_santoku_med_luftslpp_17_cm_6852017-35856753-9937396-org.jpg"
+      "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image763/daomachen_damascus_pattern_japanese_kitchen_knife-48260861-66434522-org.jpg"
     },
     {
       "id": 5,
@@ -61,5 +61,12 @@
       "img": "https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image421/--47907621-64226993-org.png"
     }
   ],
-  "shoppingCart": []
+  "shoppingCart": [
+    {
+      "id": 2,
+      "name": "Daomachen Damascus Chef Knife",
+      "price": 399,
+      "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image767/daomachen_damascus_chef_knife-48260858-66434519-org.jpg"
+    }
+  ]
 }

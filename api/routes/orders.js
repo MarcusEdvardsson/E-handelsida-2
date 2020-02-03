@@ -14,11 +14,11 @@ router.post('/', (req, res, next) => {
 
     let id = req.body.id;
     id = parseInt(id);
-    console.log(id);
 
     let object = database.get("products")
     .find({id : id})
     .value();
+
     if(object) {
         let checkifExists = database.get("shoppingCart").find({id: id}).value()
         if(!checkifExists) {
@@ -30,15 +30,14 @@ router.post('/', (req, res, next) => {
         res.send(object)
         } else {
             res.status(200).json({
-                message:"produkten finns redan i varukorgen"
+                message:"Produkten finns redan i varukorgen"
             });
         }
     } else {
         res.status(200).json({
-            message:"produkten finns inte i produktkatlogen"
+            message:"Produkten finns inte i produktkatlogen"
         });
     }
-
 });
 
 router.delete('/', (req, res, next) => {
@@ -60,12 +59,12 @@ router.delete('/', (req, res, next) => {
         res.send(object)
         } else {
             res.status(200).json({
-                message:"produkten finns inte i varukorgen"
+                message:"Produkten togs bort från varukorgen"
             });
         }
     } else {
         res.status(200).json({
-            message:"produkten finns inte i produktkatlogen"
+            message:"Produkten finns inte i varukorgen"
         });
     }
 

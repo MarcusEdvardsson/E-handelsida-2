@@ -78,7 +78,27 @@ a {
 	font-weight: 300;
 	margin: 5em auto;
 	position: absolute; 
-	top:55%; right:0; bottom:0; left:0;
+	top:55%; right:-30%; bottom:0; left:0;
+	padding: 20px 0;
+	width: 220px;
+	height:68px;
+	background: #0D6;
+	border: 1px solid #0D6;
+	color: #FFF;
+	transition: all 0.5s;
+	border-radius: 10px;
+}
+
+#hero-button-2 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #0C5;
+	font-size: 24px;
+	font-weight: 300;
+	margin: 5em auto;
+	position: absolute; 
+	top:55%; right:30%; bottom:0; left:0;
 	padding: 20px 0;
 	width: 220px;
 	height:68px;

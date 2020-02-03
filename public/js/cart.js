@@ -1,21 +1,10 @@
-// Eventlisteners
-const button = document.getElementById('hero-button');
-button.addEventListener("click", function(event) {
-    let top = document.getElementById('products-section')
-        top.scrollIntoView({
-            behavior: "smooth", 
-            block: "start"
-        });
-});
-
-// Hämta produkter
 const appendNode = (parent, elem) => {
     parent.appendChild(elem);
 };
 
-const getProducts = async () => {
-    let ul = document.getElementById('products-section'); 
-    let url = 'http://localhost:8000/products'
+const getCart = async () => {
+    let ul = document.getElementById('cart-section'); 
+    let url = 'http://localhost:8000/orders'
     let response = await fetch(url, {method: 'GET'})
     .then(response => response.json())
     .then(data => {
@@ -35,11 +24,11 @@ const getProducts = async () => {
             img.src = products.img;
             span.innerText = products.price;
             p.innerText = products.name;
-            addbutton.innerHTML = "Lägg i varukorg"
+            addbutton.innerHTML = "Ta bort från varukorgen"
 
             addbutton.addEventListener('click', () => {
-                console.log("Lägger till produkt nummer: " + products.id);
-                addtoCart(products.id);
+                console.log("Tar bort produkt nummer: " + products.id);
+                removeFromCart(products.id);
             });
 
             appendNode(card, img);
@@ -53,15 +42,13 @@ const getProducts = async () => {
     })
 };
 
-getProducts();
+getCart();
 
-// Add to cart
-const addtoCart = async (id) => {
+const removeFromCart = async (id) => {
     let obj = {id: id}
     let url = 'http://localhost:8000/orders'
-    let response = await fetch(url, {method: 'POST', headers: {'Content-Type': 'application/json;charset=utf-8'}, body: JSON.stringify(obj)})
+    let response = await fetch(url, {method: 'DELETE', headers: {'Content-Type': 'application/json;charset=utf-8'}, body: JSON.stringify(obj)})
     let data = await response.json()
     console.log(obj)
     return data;
 };
-

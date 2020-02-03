@@ -21,12 +21,14 @@ const getProducts = async () => {
     .then(data => {
         data.forEach((products) => {
             card = document.createElement('div'),
+            imgDiv = document.createElement('div'),
             img = document.createElement('img'),
             p = document.createElement('p'),
             span = document.createElement('span'),
             addbutton = document.createElement('button');
 
             card.classList.add('product-item');
+            imgDiv.classList.add('product-img-div')
             img.classList.add('product-img');
             p.classList.add('product-name');
             span.classList.add('product-price');
@@ -42,11 +44,12 @@ const getProducts = async () => {
                 addtoCart(products.id);
             });
 
-            appendNode(card, img);
+            appendNode(card, imgDiv);
             appendNode(card, p);
             appendNode(card, span);
             appendNode(card, addbutton);
             appendNode(ul, card);
+            appendNode(imgDiv, img);
         });
     }).catch(err => {
         console.error('Error: ', err);

@@ -71,6 +71,8 @@ const addtoCart = async (id) => {
     return data;
 };
 
+
+// Scrolla till toppen med ESC
 document.addEventListener("keyup", function(event) {
     if (event.keyCode === 27) {
         let top = document.getElementById('mainListDiv')
@@ -80,3 +82,29 @@ document.addEventListener("keyup", function(event) {
         });
     };
 });
+
+// Lightbox funktion som ännu inte fungerar 
+
+function lightboxFunction() {
+    const lightbox = document.createElement('div');
+    lightbox.id = 'lightbox';
+    document.body.appendChild(lightbox);
+    
+    const images = document.getElementsByClassName('product-img')
+    images.forEach(image => {
+        image.addEventListener('click', e => {
+            lightbox.classList.add('active');
+            const img = document.createElement('img')
+            img.src = image.src
+            while(lightbox.firstChild) {
+                lightbox.removeChild(lightbox.firstChild)
+            }
+            lightbox.appendChild(img)
+        })
+    })
+    
+    lightbox.addEventListener('click', e => {
+        if(e.target !== e.currentTarget) return
+        lightbox.classList.remove('active')
+    })
+};

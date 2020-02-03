@@ -99,22 +99,22 @@ a {
 	}
 }
 
+.logo {
+	margin-top: -15rem;
+	height: 250px;
+	width: 250px;
+}
+
 .hero-big-header {
 	font-family: 'Lobster', sans-serif;
-	font-size: 15rem;
+	font-size: 5rem;
+	font-weight: lighter;
 	background: -webkit-linear-gradient(#ffe838, #fd57bf);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: 1s ease-out 0s 1 slideInFromLeft;
-}
-
-.hero-small-header {
-	font-size: 2rem;
-	font-variant: small-caps;
-	letter-spacing: 4px;
-	word-spacing: 3px;
-	font-style: italic;
+	margin-bottom: 3rem;
 }
 
 .button {
@@ -206,7 +206,7 @@ a {
 .product-section {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	grid-gap: 10px;
+	grid-gap: 40px;
 	padding: 5% 10%;
 	height: auto;
 	width: 100%;
@@ -266,6 +266,7 @@ a {
 
 .product-item:hover .product-img-div {
   bottom: 80px;
+  box-shadow: 0px 30px 50px -30px rgba(0,0,0,0.75);
 }
 
 .product-item .product-img-div img{
@@ -312,4 +313,27 @@ a {
 	font-weight: bold;
 	cursor: pointer;
 	padding-bottom: 0.5rem;
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    cursor: pointer;
+}
+
+#lightbox img {
+    cursor: default;
+    border: 3px solid black;
+    box-shadow: 2px 2px 44px 41px rgba(255,255,255,0.61);
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

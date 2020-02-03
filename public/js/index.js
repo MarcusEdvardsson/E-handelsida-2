@@ -6,8 +6,19 @@ button.addEventListener("click", function(event) {
             behavior: "smooth", 
             block: "start"
         });
-    getProducts();
 });
+
+
+
+// Add to cart
+const addtoCart = async (id) => {
+    let url = 'http://localhost:8000/orders'
+    let response = await fetch(url, {method: 'POST'})
+    .then(response => response.json())
+    .then(data => {
+         return data
+    });
+};
 
 // Hämta produkter
 const appendNode = (parent, elem) => {
@@ -38,6 +49,11 @@ const getProducts = async () => {
             p.innerText = products.name;
             addbutton.innerHTML = "Lägg i varukorg"
 
+            addbutton.addEventListener('click', () => {
+                console.log("Lägger till produkt nummer: " + products.id);
+                addtoCart(products.id);
+            });
+
             appendNode(card, img);
             appendNode(card, p);
             appendNode(card, span);
@@ -49,8 +65,8 @@ const getProducts = async () => {
     })
 };
 
-// Add to cart
+getProducts();
+
 
 // Remove from cart
 
-// CLearar form

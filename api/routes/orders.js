@@ -13,16 +13,16 @@ router.get('/', (req, res, next) => {
 router.post('/', (req, res, next) => {
 
     let id = req.body.id;
-    id = parseInt(id)
+    id = parseInt(id);
+    console.log(id);
 
     let object = database.get("products")
     .find({id : id})
     .value();
-
     if(object) {
         let checkifExists = database.get("shoppingCart").find({id: id}).value()
         if(!checkifExists) {
-             
+            
         database.get("shoppingCart")
         .push(object)
         .write();

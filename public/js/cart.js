@@ -31,7 +31,6 @@ const getCart = async () => {
             addbutton.innerHTML = "Ta bort från varukorg"
 
             addbutton.addEventListener('click', () => {
-                console.log("Tar bort produkt nummer: " + products.id);
                 removeFromCart(products.id);
             });
 
@@ -58,3 +57,4 @@ const removeFromCart = async (id) => {
     console.log(obj)
     return data;
 };
+

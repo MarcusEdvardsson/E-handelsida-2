@@ -42,7 +42,6 @@ const getProducts = async () => {
             addbutton.innerHTML = "Lägg i varukorg"
 
             addbutton.addEventListener('click', () => {
-                console.log("Lägger till produkt nummer: " + products.id);
                 addtoCart(products.id);
             });
 
@@ -60,6 +59,9 @@ const getProducts = async () => {
 };
 
 getProducts();
+// Disable added buttons 
+
+// Importera "cart" => kolla ifall id till button finns i cart, om = true => disable button add innerHTML. 
 
 // Add to cart
 const addtoCart = async (id) => {

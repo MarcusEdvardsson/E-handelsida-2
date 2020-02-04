@@ -20,45 +20,57 @@
     },
     {
       "id": 4,
-      "name": "Daomachen Kitchen Knife",
+      "name": "Tomato knife - DM-0722",
       "price": 549,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image763/daomachen_damascus_pattern_japanese_kitchen_knife-48260861-66434522-org.jpg"
+      "img": "https://www.kai-europe.com/kitchen/images/products/dm0722@2x.png"
     },
     {
       "id": 5,
-      "name": "Kuro Chopper",
+      "name": "Chef's knife - TDM-1706",
       "price": 1019,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/householdappliancesdocument/hushallsapparater/image5/kuro_chopper_18_cm_handsmidd-44820734-1.jpg"
+      "img": "https://www.kai-europe.com/kitchen/images/products/tdm1706@2x.png"
     },
     {
       "id": 6,
-      "name": "Tojiro Flash",
+      "name": "Tanto Slicer BZ-0048",
       "price": 4629,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image885/tojiro_flash_kockkniv_27_cm_ffch270-35431045-9426765-org.=85"
+      "img": "https://www.kai-europe.com/kitchen/images/products/bz0048@2x.png"
     },
     {
       "id": 7,
-      "name": "Tojiro Flash",
+      "name": "Nakiri - DM-0728",
       "price": 3199,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image256/tojiro_flash_santoku_med_luftslpp_18_cm_ffsa181-35431047-9426767-org.=92"
+      "img": "https://www.kai-europe.com/kitchen/images/products/dm0728@2x.png"
     },
     {
       "id": 8,
-      "name": "Magoroku Grönsakskniv",
+      "name": "Chef's knife",
       "price": 2490,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/householdappliances/hushllsapparater/image740/magoroku_grnsakskniv_165_cm-44777761-51425243-org.png"
+      "img": "https://www.kai-europe.com/kitchen/images/products/6720c@2x.png"
     },
     {
       "id": 9,
-      "name": "Tojiro Flash",
+      "name": "Santoku",
       "price": 2319,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image903/tojiro_flash_urbeningskniv_15_cm_ffbo150-35431032-9426752-org.=80"
+      "img": "https://www.kai-europe.com/kitchen/images/products/tmm0702@2x.png"
     },
     {
       "id": 10,
-      "name": "Brödkniv",
-      "price": 2099,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/homeandgarden/hemtrdgrd/image421/--47907621-64226993-org.png"
+      "name": "Utility knife",
+      "price": 2499,
+      "img": "https://www.kai-europe.com/kitchen/images/products/ndc0702@2x.png"
+    },
+    {
+      "id": 11,
+      "name": "Santoku - DM-0718",
+      "price": 3299,
+      "img": "https://www.kai-europe.com/kitchen/images/products/dm0718@2x.png"
+    },
+    {
+      "id": 12,
+      "name": "Cleaver - DM-0767",
+      "price": 10000,
+      "img": "https://www.kai-europe.com/kitchen/images/products/dm0767@2x.png"
     }
   ],
   "shoppingCart": []

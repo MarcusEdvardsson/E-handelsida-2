@@ -44,6 +44,7 @@ const getProducts = async () => {
             addbutton.addEventListener('click', () => {
                 console.log("Lägger till produkt nummer: " + products.id);
                 addtoCart(products.id);
+                addbutton.toggleClass("added");
             });
 
             appendNode(card, imgDiv);

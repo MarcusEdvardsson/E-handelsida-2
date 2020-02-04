@@ -37,14 +37,13 @@ const getProducts = async () => {
             addbutton.classList.add('product-button');
 
             img.src = products.img;
-            span.innerText = products.price;
+            span.innerText = products.price + " kr";
             p.innerText = products.name;
             addbutton.innerHTML = "Lägg i varukorg"
 
             addbutton.addEventListener('click', () => {
                 console.log("Lägger till produkt nummer: " + products.id);
                 addtoCart(products.id);
-                addbutton.toggleClass("added");
             });
 
             appendNode(card, imgDiv);

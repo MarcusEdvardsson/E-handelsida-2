@@ -115,7 +115,7 @@ a {
 }
 
 .logo {
-	margin-top: -25rem;
+	margin-top: -18rem;
 	height: 250px;
 	width: 250px;
 	animation: 1s ease-out 0s 1 slideInFromRight;
@@ -200,9 +200,17 @@ a {
 .product-section {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	grid-gap: 10%;
-	padding: 5% 10%;
-	height: auto;
+	padding: 10% 5%;
+	height: 400vh;
+	width: 100%;
+}
+
+.cart-section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 1%;
+	padding: 10% 5%;
+	height: 200vh;
 	width: 100%;
 }
 
@@ -296,8 +304,9 @@ a {
 
 .product-button {
 	display: inline-block;
+	background-color:#FFFFFF;
+	border: 0.1em solid #000000;
 	padding:0.35em 1.2em;
-	border:0.1em solid #FFFFFF;
 	margin:0 0.3em 0.3em 0;
 	border-radius:0.12em;
 	box-sizing: border-box;
@@ -310,9 +319,9 @@ a {
 	margin-left: 4rem;
 }
 .product-button:hover{
-	color:#000000;
+	color:lightgreen;
 	background-color:#FFFFFF;
-	border:0.1em solid #000000;
+	border: 0.1em solid lightgreen	;
 }
 
 .added {

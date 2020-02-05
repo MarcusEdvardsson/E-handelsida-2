@@ -1,3 +1,4 @@
+
 const appendNode = (parent, elem) => {
     parent.appendChild(elem);
 };
@@ -52,7 +53,7 @@ getCart();
 const removeFromCart = async (id) => {
     let obj = {id: id}
     let url = 'http://localhost:8000/orders'
-    let response = await fetch(url, {method: 'DELETE', headers: {'Content-Type': 'application/json;charset=utf-8'}, body: JSON.stringify(obj)})
+    let response = await fetch(url, {method: 'DELETE', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(obj)})
     let data = await response.json()
     console.log(obj)
     return data;

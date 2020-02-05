@@ -43,7 +43,14 @@ const getProducts = async () => {
 
             addbutton.addEventListener('click', () => {
                 addtoCart(products.id);
+                removeEvent();
             });
+
+            let removeEvent = async () => {
+                if()
+                addbutton.removeEventListener('click');
+                addbutton.innerHTML = 'Lagd i varukorgen';
+            };
 
             appendNode(card, imgDiv);
             appendNode(card, txtDiv);
@@ -55,7 +62,7 @@ const getProducts = async () => {
         });
     }).catch(err => {
         console.error('Error: ', err);
-    })
+    });
 };
 
 getProducts();

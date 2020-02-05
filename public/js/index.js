@@ -59,9 +59,18 @@ const getProducts = async () => {
 };
 
 getProducts();
+
 // Disable added buttons 
 
 // Importera "cart" => kolla ifall id till button finns i cart, om = true => disable button add innerHTML. 
+// import { getCart } from "./cart.js";
+// getCart();
+
+// let button = document.getElementsByClassName('product-button');
+// button.addEventListener('click', () => {
+//     button.classList.remove('product-button');
+//     button.classList.add('added');
+// });
 
 // Add to cart
 const addtoCart = async (id) => {

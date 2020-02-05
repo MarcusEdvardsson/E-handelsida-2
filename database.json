@@ -75,28 +75,10 @@
   ],
   "shoppingCart": [
     {
-      "id": 5,
-      "name": "Chef's knife - TDM-1706",
-      "price": 1019,
-      "img": "https://www.kai-europe.com/kitchen/images/products/tdm1706@2x.png"
-    },
-    {
       "id": 2,
       "name": "Daomachen Chef Knife",
       "price": 399,
       "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image767/daomachen_damascus_chef_knife-48260858-66434519-org.jpg"
-    },
-    {
-      "id": 1,
-      "name": "Daomachen Slicing Knife",
-      "price": 498,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image859/daomachen_damascus_pattern_slicing_chef_knife-48260856-66434517-org.png"
-    },
-    {
-      "id": 3,
-      "name": "Daomachen Chef Knife",
-      "price": 449,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image391/daomachen_damascus_pattern_japanese_chef_knife-48260857-66434518-org.jpg"
     }
   ]
 }

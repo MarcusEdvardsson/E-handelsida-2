@@ -43,7 +43,6 @@ const getProducts = async () => {
 
             addbutton.addEventListener('click', () => {
                 addtoCart(products.id);
-
             });
 
             appendNode(card, imgDiv);
@@ -64,45 +63,20 @@ getProducts();
 // Disable added buttons 
 
 
-
-
-// Importera "cart" => kolla ifall id till button finns i cart, om = true => disable button add innerHTML. 
-
-// let removeButton = () => {
-//     let elem = document.getElementsByClassName("product-button");
-//     elem.classList.toggle('added');
-// };
-
-// import { getCart } from "./cart.js";
-// getCart();
-// let removeEvent = () => {
-//     import { getCart } from "./cart.js";
-//     addbutton.removeEventListener('click');
-//     addbutton.innerHTML = 'Lagd i varukorgen';
-// };
-
-// let button = document.getElementsByClassName('product-button');
-// button.addEventListener('click', () => {
-//     button.classList.remove('product-button');
-//     button.classList.add('added');
-// });
-
 // Add to cart
 const addtoCart = async (id) => {
     let obj = {id: id}
     let url = 'http://localhost:8000/orders'
     let response = await fetch(url, {method: 'POST', headers: {'Content-Type': 'application/json;charset=utf-8'}, body: JSON.stringify(obj)})
     let data = await response.json()
-    popupFunction();
     return data;
+    popupFunction();
 };
 
-let popupFunction = () => {
-    let popupbtn = document.getElementsByClassName("product-button");
-    let popup = document.getElementById("myPopup");
-    popupbtn.addEventListener('click', () => {
-        popup.classList.toggle("show");
-    });
+let popupFunction = async () => {
+    let button = document.getElementsByClassName('button')
+    console.log('hej');
+    console.log(product-button);
 };
 
 
@@ -124,7 +98,7 @@ function lightboxFunction() {
     lightbox.id = 'lightbox';
     document.body.appendChild(lightbox);
     
-    const images = document.getElementsByClassName('product-img')
+    const images = document.querySelectorAll('div')
     images.forEach(image => {
         image.addEventListener('click', e => {
             lightbox.classList.add('active');

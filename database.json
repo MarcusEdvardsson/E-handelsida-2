@@ -75,16 +75,10 @@
   ],
   "shoppingCart": [
     {
-      "id": 1,
-      "name": "Daomachen Slicing Knife",
-      "price": 498,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image859/daomachen_damascus_pattern_slicing_chef_knife-48260856-66434517-org.png"
-    },
-    {
-      "id": 8,
-      "name": "Chef's knife",
-      "price": 2490,
-      "img": "https://www.kai-europe.com/kitchen/images/products/6720c@2x.png"
+      "id": 3,
+      "name": "Daomachen Chef Knife",
+      "price": 449,
+      "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image391/daomachen_damascus_pattern_japanese_chef_knife-48260857-66434518-org.jpg"
     },
     {
       "id": 2,

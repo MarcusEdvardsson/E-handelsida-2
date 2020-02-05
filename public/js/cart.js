@@ -4,13 +4,13 @@ const appendNode = (parent, elem) => {
 };
 
 const getCart = async () => {
-    let ul = document.getElementById('cart-section'); 
+    let output = document.getElementById('cart-section'); 
     let url = 'http://localhost:8000/orders'
     let response = await fetch(url, {method: 'GET'})
     .then(response => response.json())
     .then(data => {
         data.forEach((products) => {
-            card = document.createElement('div'),
+            let card = document.createElement('div'),
             imgDiv = document.createElement('div'),
             txtDiv = document.createElement('div'),
             img = document.createElement('img'),
@@ -40,7 +40,7 @@ const getCart = async () => {
             appendNode(txtDiv, p);
             appendNode(txtDiv, span);
             appendNode(txtDiv, addbutton);
-            appendNode(ul, card);
+            appendNode(output, card);
             appendNode(imgDiv, img);
         });
     }).catch(err => {

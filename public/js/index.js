@@ -20,7 +20,7 @@ const getProducts = async () => {
     .then(response => response.json())
     .then(data => {
         data.forEach((products) => {
-            card = document.createElement('div'),
+            let card = document.createElement('div'),
             imgDiv = document.createElement('div'),
             txtDiv = document.createElement('div'),
             img = document.createElement('img'),
@@ -43,14 +43,8 @@ const getProducts = async () => {
 
             addbutton.addEventListener('click', () => {
                 addtoCart(products.id);
-                removeEvent();
-            });
 
-            let removeEvent = async () => {
-                if()
-                addbutton.removeEventListener('click');
-                addbutton.innerHTML = 'Lagd i varukorgen';
-            };
+            });
 
             appendNode(card, imgDiv);
             appendNode(card, txtDiv);
@@ -69,9 +63,23 @@ getProducts();
 
 // Disable added buttons 
 
+
+
+
 // Importera "cart" => kolla ifall id till button finns i cart, om = true => disable button add innerHTML. 
+
+// let removeButton = () => {
+//     let elem = document.getElementsByClassName("product-button");
+//     elem.classList.toggle('added');
+// };
+
 // import { getCart } from "./cart.js";
 // getCart();
+// let removeEvent = () => {
+//     import { getCart } from "./cart.js";
+//     addbutton.removeEventListener('click');
+//     addbutton.innerHTML = 'Lagd i varukorgen';
+// };
 
 // let button = document.getElementsByClassName('product-button');
 // button.addEventListener('click', () => {
@@ -85,8 +93,16 @@ const addtoCart = async (id) => {
     let url = 'http://localhost:8000/orders'
     let response = await fetch(url, {method: 'POST', headers: {'Content-Type': 'application/json;charset=utf-8'}, body: JSON.stringify(obj)})
     let data = await response.json()
-    console.log(obj)
+    popupFunction();
     return data;
+};
+
+let popupFunction = () => {
+    let popupbtn = document.getElementsByClassName("product-button");
+    let popup = document.getElementById("myPopup");
+    popupbtn.addEventListener('click', () => {
+        popup.classList.toggle("show");
+    });
 };
 
 

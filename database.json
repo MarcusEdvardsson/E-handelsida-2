@@ -75,22 +75,22 @@
   ],
   "shoppingCart": [
     {
+      "id": 1,
+      "name": "Daomachen Slicing Knife",
+      "price": 498,
+      "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image859/daomachen_damascus_pattern_slicing_chef_knife-48260856-66434517-org.png"
+    },
+    {
+      "id": 8,
+      "name": "Chef's knife",
+      "price": 2490,
+      "img": "https://www.kai-europe.com/kitchen/images/products/6720c@2x.png"
+    },
+    {
       "id": 2,
       "name": "Daomachen Chef Knife",
       "price": 399,
       "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image767/daomachen_damascus_chef_knife-48260858-66434519-org.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Tomato knife - DM-0722",
-      "price": 549,
-      "img": "https://www.kai-europe.com/kitchen/images/products/dm0722@2x.png"
-    },
-    {
-      "id": 12,
-      "name": "Cleaver - DM-0767",
-      "price": 10000,
-      "img": "https://www.kai-europe.com/kitchen/images/products/dm0767@2x.png"
     }
   ]
 }

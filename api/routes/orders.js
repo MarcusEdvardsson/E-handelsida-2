@@ -49,12 +49,6 @@ router.delete('/', (req, res, next) => {
     if(object) {
         let checkifExists = database.get("shoppingCart").find({id: id}).value()
         if(!checkifExists) {
-             
-        database.get("shoppingCart")
-        .remove(object)
-        .write();
-    
-        res.send(object)
         } else {
             res.status(200).json({
                 message:"Produkten togs bort från varukorgen"
@@ -65,8 +59,6 @@ router.delete('/', (req, res, next) => {
             message:"Produkten finns inte i varukorgen"
         });
     }
-
-
     database.get("shoppingCart")
     .remove(object)
     .write();

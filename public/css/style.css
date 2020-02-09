@@ -304,19 +304,16 @@ a {
 
 .product-button {
 	display: inline-block;
-	background-color:#FFFFFF;
 	border: 0.1em solid #000000;
-	padding:0.35em 1.2em;
-	margin:0 0.3em 0.3em 0;
+	padding:0.5em 1.2em;
 	border-radius:0.12em;
-	box-sizing: border-box;
 	text-decoration:none;
 	font-family:'Roboto',sans-serif;
 	font-weight:300;
 	color:black;
-	text-align:center;
 	transition: all 0.2s;
 	margin-left: 4rem;
+	cursor: pointer;
 }
 .product-button:hover{
 	color:lightgreen;

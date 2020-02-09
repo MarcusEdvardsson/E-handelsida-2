@@ -73,18 +73,5 @@
       "img": "https://www.kai-europe.com/kitchen/images/products/dm0767@2x.png"
     }
   ],
-  "shoppingCart": [
-    {
-      "id": 3,
-      "name": "Daomachen Chef Knife",
-      "price": 449,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image391/daomachen_damascus_pattern_japanese_chef_knife-48260857-66434518-org.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Daomachen Chef Knife",
-      "price": 399,
-      "img": "https://cdn.cdon.com/media-dynamic/images/product/furnitureinterior/furnitureinteriordefault/image767/daomachen_damascus_chef_knife-48260858-66434519-org.jpg"
-    }
-  ]
+  "shoppingCart": []
 }

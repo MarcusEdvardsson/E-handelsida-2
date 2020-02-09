@@ -16,7 +16,7 @@ const getCart = async () => {
             img = document.createElement('img'),
             p = document.createElement('p'),
             span = document.createElement('span'),
-            addbutton = document.createElement('button');
+            addbutton = document.createElement('a');
 
             card.classList.add('product-item');
             imgDiv.classList.add('product-img-div');

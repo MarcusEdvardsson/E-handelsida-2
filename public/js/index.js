@@ -26,7 +26,7 @@ const getProducts = async () => {
             img = document.createElement('img'),
             p = document.createElement('p'),
             span = document.createElement('span'),
-            addbutton = document.createElement('button');
+            addbutton = document.createElement('a');
 
             card.classList.add('product-item');
             imgDiv.classList.add('product-img-div');
@@ -69,15 +69,13 @@ const addtoCart = async (id) => {
     let url = 'http://localhost:8000/orders'
     let response = await fetch(url, {method: 'POST', headers: {'Content-Type': 'application/json;charset=utf-8'}, body: JSON.stringify(obj)})
     let data = await response.json()
-    return data;
-    popupFunction();
+    if(obj.id === obj.id) {
+        console.log('kolla om id finns i shoppingcart, om true byt ut knapp, om false return data')
+    } else {
+        return data;
+    }
 };
 
-let popupFunction = async () => {
-    let button = document.getElementsByClassName('button')
-    console.log('hej');
-    console.log(product-button);
-};
 
 
 // Scrolla till toppen med ESC
